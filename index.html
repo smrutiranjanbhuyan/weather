@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="upper">
+            <div class="logo"><i class="ri-home-8-line"></i></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#temp1">Weather</a></li>
+                <li><a href="#ab">About</a></li>
+                <li><a href="mailto:smruti452004@gmail.com">Email us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container-fluid">
+            <section class="main">
+                <section class="inputs">
+                    <input type="text" placeholder="Enter any city..." id="cityinput">
+                    <input type="submit" value="Submit" id="add">
+                    <button placeholder="submit" id="add"></button>
+                </section>
+
+                <section class="display">
+                    <div class="wrapper">
+                        <h2 id="cityoutput"></h2>
+                        <p id="temp"></p>
+                        <p id="condi"></p>
+                        <p id="humidity"></p>
+                        <p id="pressure"></p>
+                    </div>
+                </section>
+            </section>
+
+
+        </div>
+
+        <div class='app-layout'>
+            <div class='box Temp'>
+                <h2>Temprature</h2>
+                <p id="temp1"></p>
+                <p id="feels_like"></p>
+                <p id="temp_max"></p>
+                <p id="temp_min"></p>
+            </div>
+            <div class='box Wheather'>
+                <h2>Weather</h2>
+                <p id="description"></p>
+                <p id="speed"></p>
+                <p id="deg"></p>
+                <p id="gust"></p>
+
+            </div>
+            <div class='box Sun'>
+                <h2>Sunrise</h2>
+                <p id="sunrise"></p>
+
+            </div>
+            <div class='box Wind'>
+                <h2>Sunset</h2>
+                <p id="sunset"></p>
+            </div>
+        </div>
+        <div class="aboutsec">
+            <h3 id="ab">About</h3>
+            <p>WeatherVue is a concise weather project built with HTML, CSS, and JavaScript. It offers a snapshot of the
+                current weather conditions at a glance.</p>
+        </div>
+
+        <div id="footer">
+            <div>
+                <h5>
+                    Copyright &copy;2023 <a href="">Smruti Editex</a>
+                </h5>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+
+
+</body>
